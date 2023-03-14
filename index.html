@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;900&family=Be+Vietnam+Pro:wght@400;500;700;800&family=Big+Shoulders+Display:wght@900&family=Chivo&family=Hanken+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;700&family=Josefin+Sans:wght@300;400;600&family=Kumbh+Sans:wght@400;700;800&family=Open+Sans&family=Outfit:wght@300&family=Plus+Jakarta+Sans:wght@700;800&family=Poppins:wght@200;300;400;600&family=Raleway:wght@400;700&family=Space+Mono:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Pod request access landing page</title>
+</head>
+
+<body>
+  <div class="background-image"></div>
+  <div class="container">
+    <header>
+      <img class="logo" src="/assets/desktop/logo.svg" alt="pod">
+    </header>
+    <div class="left-section">
+      <article class="article-section">
+        <h1>Publish your podcasts <span>everywhere.</span></h1>
+        <p> Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify,
+          Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
+      </article>
+      <!--must change order-->
+      <!--must change order-->
+      <div class="pod-section">
+        <ul class="podcasts">
+          <li>
+            <img class="spotify" src="/assets/desktop/spotify.svg" alt="">
+          </li>
+          <li>
+            <img class="apple-podcast" src="/assets/desktop/apple-podcast.svg" alt="">
+          </li>
+          <li>
+            <img class="google-podcast" src="/assets/desktop/google-podcasts.svg" alt="">
+          </li>
+          <li>
+            <img class="pocket-podcast" src="/assets/desktop/pocket-casts.svg" alt="">
+          </li>
+        </ul>
+      </div>
+      <div class="email-section">
+        <input class="email" type="text" placeholder="Email adress">
+        <button><strong>Request access</strong></button>
+        <p class="error"></p>
+      </div>
+    </div>
+    <div class="image-section">
+      <img class="tablet-image" src="/assets/tablet/image-host.jpg" alt="">
+      <img class="dekstop-image" src="/assets/desktop/image-host.jpg" alt="">
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

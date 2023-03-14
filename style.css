@@ -1,0 +1,155 @@
+:root {
+    --light-green--text--: hsla(157, 74%, 61%, 1);
+    --paragraph-color--: hsla(224, 40%, 83%, 1);
+    --light-dark--: hsla(225, 26%, 23%, 1);
+    --dark--: hsla(224, 35%, 11%, 1);
+    --white--: hsla(0, 0%, 100%, 1);
+    --dark-gray--: hsla(225, 21%, 45%, 1);
+    --light-gray--: hsla(225, 40%, 83%, 1);
+    --button-default-color: hsla(157, 74%, 61%, 1);
+    --button-hover-color: hsla(157, 100%, 85%, 1);
+    --error--: hsla(0, 96%, 61%, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*MOBILE*/
+
+body {
+    font-family: 'Chivo', sans-serif;
+}
+
+.tablet-image,
+.dekstop-image {
+    display: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+.background-image {
+    position: relative;
+    background-image: url(/assets/mobile/image-host.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    background-color: var(--light-dark--);
+    background-blend-mode: multiply;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 62px;
+
+}
+
+.article-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.podcasts {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 33px;
+}
+
+.email-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+}
+
+.email {
+    width: 327px;
+    background-color: hsla(224, 26%, 23%, 1);
+    border: 0;
+    border-radius: 28px;
+    padding: 15px 200px 15px 32px;
+    color: var(--white--);
+}
+
+input[type="text"] {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 28px;
+    outline: none;
+}
+
+button {
+    width: 327px;
+    padding: 9px 109px 9px 109px;
+    border-radius: 28px;
+    background-color: var(--button-default-color);
+    color: hsla(224, 35%, 11%, 1);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 16px;
+    border: 0;
+    cursor: pointer;
+}
+
+
+
+.article-section h1 {
+    text-transform: uppercase;
+    color: var(--light-green--text--);
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 38px;
+    margin-top: 57px;
+    text-align: center;
+    width: 340px;
+}
+
+.article-section span {
+    color: var(--white--);
+}
+
+.article-section p {
+    margin-top: 16px;
+    color: var(--paragraph-color--);
+    font-family: Chivo;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    width: 327px;
+}
+
+.podcasts {
+    display: flex;
+}
+
+/*icons*/
+
+.spotify {
+    width: 56px;
+}
+
+.apple-podcast {
+    width: 45px;
+}
+
+.google-podcast {
+    width: 73px;
+}
+
+.pocket-podcast {
+    width: 77px;
+}
