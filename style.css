@@ -21,6 +21,9 @@
 
 body {
     font-family: 'Chivo', sans-serif;
+    background-color: var(--dark--);
+    height: 100vh;
+   
 }
 
 .tablet-image,
@@ -28,7 +31,7 @@ body {
     display: none;
 }
 
-li{
+li {
     list-style-type: none;
 }
 
@@ -38,7 +41,6 @@ li{
     background-repeat: no-repeat;
     background-size: contain;
     height: 100vh;
-    background-color: var(--light-dark--);
     background-blend-mode: multiply;
 }
 
@@ -50,7 +52,6 @@ li{
     align-items: center;
     width: 100%;
     margin-top: 62px;
-
 }
 
 .article-section {
@@ -86,7 +87,6 @@ li{
 input[type="text"] {
     font-weight: bold;
     font-size: 14px;
-    line-height: 28px;
     outline: none;
 }
 
@@ -103,8 +103,6 @@ button {
     border: 0;
     cursor: pointer;
 }
-
-
 
 .article-section h1 {
     text-transform: uppercase;
@@ -152,4 +150,163 @@ button {
 
 .pocket-podcast {
     width: 77px;
+}
+
+@media(min-width: 768px) {
+
+    .background-image {
+        position: relative;
+        background-image: url(/assets/tablet/image-host.jpg);
+        background-blend-mode: multiply;
+        background-position: right;
+        background-size: contain;
+        height: 767px;
+    }
+
+    .container {
+        position: absolute;
+        align-items: flex-start;
+        top: 200px;
+        left: 100px;
+        background-color: var(--dark--);
+        width: 635px;
+        height: 509px;
+        margin-bottom: 257px;
+
+    }
+
+    header {
+        position: absolute;
+        top: -220px;
+    }
+
+    .article-section {
+        align-items: flex-start;
+    }
+
+    .article-section h1 {
+        text-align: start;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 56px;
+        width: 110%;
+        margin-top: 90px;
+
+    }
+
+    .article-section p {
+        text-align: start;
+        font-family: Chivo;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        width: 445px;
+        margin-top: 31px;
+    }
+
+    .podcasts {
+        width: 536px;
+        justify-content: space-between;
+    }
+
+    .email-section {
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-top: 40px;
+    }
+
+    .email {
+        position: relative;
+        width: 427px;
+    }
+
+    button {
+        position: absolute;
+        height: 46px;
+        width: 162px;
+        font-size: 14px;
+        line-height: 28px;
+        margin-top: 0;
+        padding: 0;
+        margin-left: 265px;
+    }
+
+    .dots {
+        position: absolute;
+        background-image: url(/assets/desktop/bg-pattern-dots.svg);
+        background-repeat: no-repeat;
+        width: 232px;
+        height: 104px;
+        left: 40px;
+        margin-top: 93px;
+    }
+
+    /*icons*/
+
+    .spotify {
+        width: 95px;
+    }
+
+    .apple-podcast {
+        width: 78px;
+    }
+
+    .google-podcast {
+        width: 125px;
+    }
+
+    .pocket-podcast {
+        width: 129px;
+    }
+
+    /*Dekstop*/
+
+    @media(min-width:1440px) {
+
+        .flex-container{
+            padding: 130px 0px 130px 165px;
+        }
+    
+        .background-image {
+            background-image: url(/assets/desktop/image-host.jpg);
+            width: 962px;
+            height: 640px;
+            left: 600px;
+        }
+
+        header{
+            top: -160px;
+        }
+
+        .container {
+          
+            width: 723px;
+            height: 509px;
+            top: 210px;
+        }
+
+        .article-section h1 {
+            font-family: Chivo;
+            font-size: 52px;
+            font-weight: 400;
+            line-height: 62px;
+        }
+
+        .article-section p {
+            font-family: Chivo;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+        }
+
+        .left-section {
+            height: 509px;
+        }
+
+        .dots {
+            background-image: url(/assets/desktop/bg-pattern-dots.svg);
+            top: 550px;
+            left: 1290px;
+        }
+    }
 }
