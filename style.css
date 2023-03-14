@@ -68,6 +68,7 @@ li {
 .podcasts {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin-top: 33px;
 }
 
@@ -287,6 +288,11 @@ button {
         line-height: 14px;
     }
 
+    .reverse{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
     /*Dekstop*/
 
     @media(min-width:1440px) {
@@ -342,6 +348,11 @@ button {
 
         button:hover {
             background-color: var(--button-hover-color);
+        }
+
+        .reverse{
+            display: flex;
+            flex-direction: column-reverse;
         }
     }
 }
