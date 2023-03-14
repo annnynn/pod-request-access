@@ -23,7 +23,7 @@ body {
     font-family: 'Chivo', sans-serif;
     background-color: var(--dark--);
     height: 100vh;
-   
+    min-width: 375px;
 }
 
 .tablet-image,
@@ -33,13 +33,14 @@ body {
 
 li {
     list-style-type: none;
+    cursor: pointer;
 }
 
 .background-image {
     position: relative;
     background-image: url(/assets/mobile/image-host.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 100vh;
     background-blend-mode: multiply;
 }
@@ -52,6 +53,7 @@ li {
     align-items: center;
     width: 100%;
     margin-top: 62px;
+    min-width: 375px;
 }
 
 .article-section {
@@ -163,6 +165,8 @@ button {
         height: 767px;
     }
 
+
+
     .container {
         position: absolute;
         align-items: flex-start;
@@ -172,7 +176,8 @@ button {
         width: 635px;
         height: 509px;
         margin-bottom: 257px;
-
+        width: 75%;
+        max-width: 723px;
     }
 
     header {
@@ -189,7 +194,8 @@ button {
         font-size: 48px;
         font-weight: 400;
         line-height: 56px;
-        width: 110%;
+        width: 100%;
+        max-width: 665px;
         margin-top: 90px;
 
     }
@@ -263,26 +269,28 @@ button {
 
     @media(min-width:1440px) {
 
-        .flex-container{
+        .flex-container {
             padding: 130px 0px 130px 165px;
         }
-    
+
         .background-image {
-            background-image: url(/assets/desktop/image-host.jpg);
-            width: 962px;
             height: 640px;
-            left: 600px;
+            background-position: unset;
+            background-image: url(/assets/desktop/image-host.jpg);
+            background-position: contain;
+            background-size: 962px;
+            left: 400px;
         }
 
-        header{
-            top: -160px;
+        header {
+            top: -165px;
         }
 
         .container {
-          
             width: 723px;
             height: 509px;
             top: 210px;
+            left: 165px;
         }
 
         .article-section h1 {
@@ -305,8 +313,12 @@ button {
 
         .dots {
             background-image: url(/assets/desktop/bg-pattern-dots.svg);
-            top: 550px;
+            top: 625px;
             left: 1290px;
+        }
+
+        button:hover {
+            background-color: var(--button-hover-color);
         }
     }
 }
