@@ -42,7 +42,9 @@ li {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    background-color: var(--light-dark--);
     background-blend-mode: multiply;
+    opacity: 0.3;
 }
 
 .container {
@@ -90,6 +92,7 @@ input[type="text"] {
     font-weight: bold;
     font-size: 14px;
     outline: none;
+
 }
 
 button {
@@ -154,6 +157,14 @@ button {
     width: 77px;
 }
 
+.error {
+    color: #FB3E3E;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    margin-top: 8px;
+}
+
 @media(min-width: 768px) {
 
     .background-image {
@@ -161,8 +172,11 @@ button {
         background-image: url(/assets/tablet/image-host.jpg);
         background-blend-mode: multiply;
         background-position: right;
-        background-size: contain;
+        background-size: 491px;
         height: 767px;
+        background-color: unset;
+        opacity: 1;
+
     }
 
 
@@ -216,9 +230,10 @@ button {
     }
 
     .email-section {
-        flex-direction: row;
+        flex-direction: column;
         justify-content: flex-start;
         margin-top: 40px;
+        align-items: flex-start;
     }
 
     .email {
@@ -244,7 +259,7 @@ button {
         width: 232px;
         height: 104px;
         left: 40px;
-        margin-top: 93px;
+        margin-top: 152px;
     }
 
     /*icons*/
@@ -265,6 +280,13 @@ button {
         width: 129px;
     }
 
+    .error {
+        margin-left: 32px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+    }
+
     /*Dekstop*/
 
     @media(min-width:1440px) {
@@ -280,6 +302,7 @@ button {
             background-position: contain;
             background-size: 962px;
             left: 400px;
+            width: 962px;
         }
 
         header {
@@ -313,7 +336,7 @@ button {
 
         .dots {
             background-image: url(/assets/desktop/bg-pattern-dots.svg);
-            top: 625px;
+            top: 565px;
             left: 1290px;
         }
 
