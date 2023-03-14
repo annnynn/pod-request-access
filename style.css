@@ -167,7 +167,7 @@ button {
         position: absolute;
         align-items: flex-start;
         top: 200px;
-        left: 100px;
+        left: 50px;
         background-color: var(--dark--);
         width: 635px;
         height: 509px;
