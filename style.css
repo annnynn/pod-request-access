@@ -97,8 +97,8 @@ input[type="text"] {
 }
 
 button {
-    width: 327px;
-    padding: 9px 109px 9px 109px;
+    width: 326px;
+    padding: 9px 100px 9px 100px;
     border-radius: 28px;
     background-color: var(--button-default-color);
     color: hsla(224, 35%, 11%, 1);
