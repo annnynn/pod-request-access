@@ -24,6 +24,7 @@ body {
     background-color: var(--dark--);
     height: 100vh;
     min-width: 375px;
+    overflow-x: hidden;
 }
 
 .tablet-image,
